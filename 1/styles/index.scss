@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c9c9c950;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 3px;
+    margin-right: 3px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+}
+
+.navbar {
+  h3 {
+    padding: 10px;
+    width: auto;
+    height: 30px;
+    margin: 0;
+    background-color: #ffffff;
+    box-shadow: 1px 5px 5px #00000030;
+    span {
+      font-weight: lighter;
+      font-size: 15px;
+      text-decoration: underline;
+      cursor: pointer;
+      padding: 5px 20px;
+    }
+    span:hover {
+      color: red;
+    }
+  }
+}
+
+.canvas {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 4;
+  // width and height to allocate some margin at the corners
+  width: 95vw;
+  height: 88vh;
+  // alingning the container
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  // gas b/w the sections
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+
+  div {
+    // padding: 30px;
+    height: initial;
+    width: initial;
+    border-radius: 10px;
+    padding: 10px;
+
+    .names {
+      color: #00000070;
+    }
+    .names:hover {
+      color: #00000090;
+      cursor: pointer;
+    }
+  }
+
+  .one {
+    background-color: #fff;
+    //horizontal
+    grid-row-start: 1;
+    grid-row-end: 4;
+    //vertical
+    grid-column-start: 1;
+    grid-column-end: 2;
+
+    h2 {
+      text-align: center;
+      text-decoration: underline;
+    }
+    div {
+      display: flex;
+
+      h3 {
+        padding: 10px;
+      }
+
+      p {
+        color: green;
+        margin-left: auto;
+        span {
+          color: red;
+        }
+      }
+    }
+  }
+  .two {
+    background-color: #fff;
+    //horizontal
+    grid-row-start: 1;
+    grid-row-end: 3;
+    //vertical
+    grid-column-start: 2;
+    grid-column-end: 5;
+
+    overflow: scroll;
+
+    //piechart
+    .piechart {
+      position: relative;
+      z-index: 2;
+      padding: 0;
+      width: 300px;
+      height: 300px;
+      border-radius: 50%;
+      background: conic-gradient(
+        red 0deg 90deg,
+        orange 90deg 180deg,
+        blue 180deg 190deg,
+        lime 190deg 199deg,
+        yellow 199deg 233deg,
+        pink 233deg 360deg
+      );
+    }
+  }
+  .three {
+    background-color: #fff;
+    //horizontal
+    grid-row-start: 3;
+    grid-row-end: 4;
+    //vertical
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+    overflow: scroll;
+  }
+
+  .four {
+    background-color: #fff;
+    //horizontal
+    grid-row-start: 3;
+    grid-row-end: 4;
+    //vertical
+    grid-column-start: 4;
+    grid-column-end: 5;
+
+    overflow: scroll;
+
+    //button
+    button {
+      padding: 10px 15px;
+      color: #fff;
+      background-color: rgb(41, 158, 41);
+      border-radius: 5px;
+      cursor: pointer;
+      border: none;
+      float: right;
+    }
+    button:hover {
+      opacity: 0.8;
+    }
+    button:focus {
+      border: 0px;
+    }
+  }
+}

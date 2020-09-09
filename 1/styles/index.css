@@ -1,0 +1,177 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #c9c9c950;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */
+}
+
+body ::-webkit-scrollbar {
+  width: 3px;
+  margin-right: 3px;
+}
+
+body ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+body ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+body ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.navbar h3 {
+  padding: 10px;
+  width: auto;
+  height: 30px;
+  margin: 0;
+  background-color: #ffffff;
+  -webkit-box-shadow: 1px 5px 5px #00000030;
+          box-shadow: 1px 5px 5px #00000030;
+}
+
+.navbar h3 span {
+  font-weight: lighter;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 5px 20px;
+}
+
+.navbar h3 span:hover {
+  color: red;
+}
+
+.canvas {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 3;
+      grid-template-rows: 3;
+  -ms-grid-columns: 4;
+      grid-template-columns: 4;
+  width: 95vw;
+  height: 88vh;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  grid-column-gap: 15px;
+  grid-row-gap: 10px;
+}
+
+.canvas div {
+  height: initial;
+  width: initial;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.canvas div .names {
+  color: #00000070;
+}
+
+.canvas div .names:hover {
+  color: #00000090;
+  cursor: pointer;
+}
+
+.canvas .one {
+  background-color: #fff;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 4;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.canvas .one h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+.canvas .one div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.canvas .one div h3 {
+  padding: 10px;
+}
+
+.canvas .one div p {
+  color: green;
+  margin-left: auto;
+}
+
+.canvas .one div p span {
+  color: red;
+}
+
+.canvas .two {
+  background-color: #fff;
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 3;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 5;
+  overflow: scroll;
+}
+
+.canvas .two .piechart {
+  position: relative;
+  z-index: 2;
+  padding: 0;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background: conic-gradient(red 0deg 90deg, orange 90deg 180deg, blue 180deg 190deg, lime 190deg 199deg, yellow 199deg 233deg, pink 233deg 360deg);
+}
+
+.canvas .three {
+  background-color: #fff;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 2;
+      grid-column-start: 2;
+  grid-column-end: 4;
+  overflow: scroll;
+}
+
+.canvas .four {
+  background-color: #fff;
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+  -ms-grid-column: 4;
+      grid-column-start: 4;
+  grid-column-end: 5;
+  overflow: scroll;
+}
+
+.canvas .four button {
+  padding: 10px 15px;
+  color: #fff;
+  background-color: #299e29;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  float: right;
+}
+
+.canvas .four button:hover {
+  opacity: 0.8;
+}
+
+.canvas .four button:focus {
+  border: 0px;
+}
+/*# sourceMappingURL=index.css.map */
